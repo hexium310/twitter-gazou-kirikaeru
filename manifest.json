@@ -1,0 +1,15 @@
+{
+  "name": "Twitterの画像切り替えるやつ",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "origつけたりけしたり",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://pbs.twimg.com/media/*",
+        "*://pbs.twimg.com/media/*:orig"
+      ],
+      "js": ["main.js"]
+    }
+  ]
+}
